@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+body {
+  background-color: rgba(7, 7, 7, 0.863);
+}
+h1 {
+  font-family: Russo One;
+  font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#wrapper-header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgba(255, 255, 255, 0.575);
 }
 
-.App-link {
-  color: #61dafb;
+#editor-header {
+  position: relative;
+  top: 22px;
+  width: 46%;
+  height: auto;
+  padding-left: 2%;
+  border: bottom;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#preview-header {
+  position: relative;
+  top: 22px;
+  width: 47.25%;
+  height: auto;
+  margin-left: 3.5%;
+  padding-left: 0.5%;
 }
+
+#wrapper-input {
+  display: flex;
+  height: 80vh;
+}
+
+textarea {
+  width: 46%;
+  resize: vertical;
+  margin-left: 1%;
+  margin-right: 3%;
+  border-radius: 15px 0px 0px 0px;
+  border-color: 2px black;
+  border-style: solid;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color:black;
+  background: rgb(159, 179, 159);
+}
+#preview {
+  width: 46%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-width: 2px;
+  overflow: auto;
+  border-radius: 15px 0px 0px 0px;
+  border-color: black;
+  border-style: solid;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color:black;
+  background: rgb(159, 179, 159); 
+}
+
+/* MARKDOWN STYLES*/
+blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+code {
+  background: white;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+pre {
+  background: white;
+  padding: 5px 0 5px 5px;
+}
+
+h1 {
+  border-bottom: 2px solid #224b4b;;
+}
+
+h2 {
+  border-bottom: 1px solid #224b4b;;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 2px solid #224b4b;;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
