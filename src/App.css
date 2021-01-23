@@ -106,5 +106,101 @@ th {
   padding-right: 5px;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-family: Russo One;
+    font-size: 15px;
+  }
 
+  #editor-header {
+    position: relative;
+    top: 10px;
+    width: 46%;
+    height: auto;
+    padding-left: 3%;
+    border: bottom;
+  }
+  
+  #preview-header {
+    position: relative;
+    top: 10px;
+    width: 47.25%;
+    height: auto;
+    margin-left: 3.5%;
+    padding-left: 0.5%;
+  }
+
+  textarea {
+    width: 46%;
+    resize: vertical;
+    margin-left: 1%;
+    margin-right: 3%;
+    border-radius: 5px 0px 0px 0px;
+    border-color: 0.5px black;
+    border-style: solid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 7px;
+    color:black;
+    background: rgb(159, 179, 159);
+  }
+  #preview {
+    width: 46%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-width: 0.5px;
+    overflow: auto;
+    border-radius: 5px 0px 0px 0px;
+    border-color: black;
+    border-style: solid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8px;
+    color:black;
+    background: rgb(159, 179, 159); 
+  }
+
+  blockquote {
+    border-left: 1px solid #224b4b;
+    color: #224b4b;
+    padding-left: 2.5px;
+    margin-left: 10px;
+  }
+  
+  code {
+    background: white;
+    padding: 0.5px 2px 1px 2px;
+    font-size: 6px;
+    font-weight: bold;
+  }
+  
+  pre {
+    background: white;
+    padding: 2.5px 0 2.5px 2.5px;
+  }
+  
+  h1 {
+    border-bottom: 1px solid #224b4b;;
+  }
+  
+  h2 {
+    border-bottom: 1px solid #224b4b;;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  td,
+  th {
+    border: 1px solid #224b4b;;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+  }
+
+  img {
+    width: 50%;
+  }
+
+}
 
