@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import marked from "marked";
-import "./App2.css";
+import "./App.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faKeyboard, faDesktop } from "@fortawesome/free-solid-svg-icons";
