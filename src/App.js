@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import marked from "marked";
-import "./App.css";
+import "./App2.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faKeyboard, faDesktop } from "@fortawesome/free-solid-svg-icons";
@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="editor-wrapper">
-        <h2 className="header">
+        <h2 className="header" id="header1">
           <span>
             <FontAwesomeIcon icon="keyboard" />
           </span>
@@ -32,7 +32,7 @@ function App() {
         <textarea id="editor" value={markup} onChange={handleChange}></textarea>
       </div>
 
-      <div className="preview-wrapper">
+      <div className="preview-wrapper" id="header2">
         <h2 className="header">
           <span>
             <FontAwesomeIcon icon="desktop" />
