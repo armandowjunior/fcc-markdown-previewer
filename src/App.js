@@ -1,33 +1,44 @@
-import React, { useState } from 'react';
-import marked from 'marked';
-import './App.css';
+import React, { useState } from "react";
+import marked from "marked";
+import "./App.css";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faKeyboard, faDesktop } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(faKeyboard, faDesktop);
 
 function App() {
   const [markup, setMarkup] = useState(placeholder);
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     setMarkup(event.target.value);
   };
 
   const getMarkdownText = () => {
     let rawMarkup = marked(markup, { breaks: true });
-    return {__html: rawMarkup};
-  }
+    return { __html: rawMarkup };
+  };
 
   return (
     <div className="App">
-      <div id="wrapper-header">
-        <h1 id="editor-header">Editor</h1>
-        <h1 id="preview-header">Previewer</h1>
+      <div className="editor-wrapper">
+        <h2 className="header">
+          <span>
+            <FontAwesomeIcon icon="keyboard" />
+          </span>
+          Editor
+        </h2>
+        <textarea id="editor" value={markup} onChange={handleChange}></textarea>
       </div>
 
-      <div id="wrapper-input">
-        <textarea 
-          id="editor"
-          value={markup}
-          onChange={handleChange}
-        ></textarea>
-
+      <div className="preview-wrapper">
+        <h2 className="header">
+          <span>
+            <FontAwesomeIcon icon="desktop" />
+          </span>
+          Previewer
+        </h2>
         <div id="preview" dangerouslySetInnerHTML={getMarkdownText()} />
       </div>
     </div>
