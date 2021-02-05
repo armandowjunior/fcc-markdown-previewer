@@ -35,7 +35,7 @@ span {
 .App {
   width: 95%;
   max-width: 1600px;
-  min-height: 800px;
+  min-height: 600px;
   margin: 3em auto;
   display: flex;
   justify-content: space-evenly;
@@ -125,7 +125,8 @@ li {
 @media (max-width: 1000px) {
   .App {
     flex-direction: column;
-    max-width: 700px;
+    width: 95%;
+    align-items: center;
     margin: 2em auto;
   }
 
@@ -141,5 +142,9 @@ li {
 
   .preview-wrapper {
     width: 100%;
+  }
+
+  code {
+    font-size: 10px;
   }
 }
