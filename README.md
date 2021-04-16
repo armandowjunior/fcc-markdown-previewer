@@ -1,3 +1,5 @@
 freeCodeCamp project - Build a Markdown Previewer
 
-Available at: https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer
+Working example at: https://lucid-hermann-a97cf9.netlify.app/
+
+Project available at: https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer
